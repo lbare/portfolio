@@ -73,23 +73,24 @@ function App() {
                 <input
                   type="text"
                   placeholder='Try typing "projects" or tap an icon'
-                  className="h-full w-2/3 ml-32 text-3xl font-calistoga text-left font-medium text-neutral-800 focus:outline-none"
+                  className="h-full w-2/3 ml-8 text-3xl font-calistoga text-left font-medium text-neutral-800 focus:outline-none"
                 />
               </div>
+              {/* Icons */}
               <div className="flex w-2/3 justify-evenly items-center">
-                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[10px_10px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
+                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[7px_7px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
                   <UserCircle size={54} weight="fill" color="#262626" />
                 </button>
-                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[10px_10px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
+                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[7px_7px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
                   <Code size={44} color="#262626" weight="bold" />
                 </button>
-                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[10px_10px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
+                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[7px_7px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
                   <FileText size={44} color="#262626" weight="bold" />
                 </button>
-                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[10px_10px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
+                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[7px_7px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
                   <At size={44} color="#262626" weight="bold" />
                 </button>
-                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[10px_10px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
+                <button className="w-20 h-20 flex justify-center items-center mb-6 border-4 border-neutral-800 bg-white shadow-[7px_7px_0_0_rgba(38,38,38,1)] rounded-full transition duration-200 hover:bg-white/30">
                   <DotsThree size={52} color="#262626" weight="bold" />
                 </button>
               </div>
