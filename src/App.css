@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Calistoga&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Digital7Italic-BW658";
+  src: url("./assets/Digital7Italic-BW658.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --font-albert: "Albert Sans", sans-serif;
   --font-calistoga: "Calistoga", serif;
   --font-mono: "IBM Plex Mono", monospace;
+  --font-lcd: "Digital7Italic-BW658", sans-serif;
   --color-startGrad: #3c6a7b;
   --color-endGrad: #afcbd0;
   --color-orangeLight: #fec096;
+  --color-orangeDark: #bd4f0b;
+  --color-yellowStart: #fbdea3;
+  --color-yellowEnd: #f4b378;
 }
 
 .grain-overlay {
