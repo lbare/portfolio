@@ -11,10 +11,10 @@ import {
 
 const NavBar: React.FC = () => {
   return (
-    <div className="absolute h-1/6 top-0 left-0 w-full px-60 mt-14 z-40">
-      <div className="w-full border-4 border-neutral-300 h-1/3 rounded-lg flex items-center justify-between overflow-hidden shadow-[0px_0px_5px_0_rgba(255,255,255,1)]">
+    <div className="absolute h-1/6 bottom-0 left-0 w-full px-60 mb-5 z-40">
+      <div className="w-full border-4 border-white h-1/3 rounded-lg flex items-center justify-between overflow-hidden shdow-[10px_10px_0px_0_rgba(255,255,255,1)]">
         {/* Main tabs */}
-        <div className="flex h-full w-full justify-between items-center divide-x-2 divide-white/50">
+        <div className="flex h-full bg-neutral-800 w-full justify-between items-center divide-x-2 divide-white/50">
           <button className="flex h-full w-full rounded-l-lg px-8 space-x-4 bg-neutral-800 justify-center items-center flex-row">
             <div className="w-2 h-2 bg-green-100 rounded-full shadow-[0px_0px_10px_3.5px_rgba(56,255,156,1)]" />
             <h1 className="text-lg font-mono text-white whitespace-nowrap">
