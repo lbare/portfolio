@@ -3,7 +3,7 @@ import "./App.css";
 import TVFrame from "./components/TVFrame";
 import NavBar from "./components/NavBar";
 import TVContent from "./components/TVContent";
-import BottomIcons from "./components/BottomIcons";
+import BottomIcons from "./components/LinkIcons";
 
 function App() {
   const [currentProject, setCurrentProject] = useState<string>("about");
