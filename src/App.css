@@ -30,6 +30,10 @@
   animation: animateGrain 20s steps(10) infinite;
 }
 
+.led-glow {
+  text-shadow: 0 0 8px rgb(113, 220, 151, 0.6);
+}
+
 @keyframes animateGrain {
   0%,
   100% {
