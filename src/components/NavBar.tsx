@@ -104,7 +104,11 @@ const NavBar: React.FC<NavBarProps> = ({
           </button>
           <div className="flex h-full w-full px-4 rounded-r-lg flex-row bg-neutral-900 border-gray-300 border-2 rounded-xl justify-center items-center">
             <h1 className="text-4xl font-lcd text-green-300 font-light whitespace-nowrap led-glow">
-              12:34 PM
+              {new Date().toLocaleTimeString([], {
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: true,
+              })}
             </h1>
           </div>
         </div>
