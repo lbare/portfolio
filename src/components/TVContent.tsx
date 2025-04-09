@@ -24,10 +24,10 @@ const projectComponents: Record<string, JSX.Element> = {
 const TVContent: React.FC<TVContentProps> = ({ currentProject }) => {
   return (
     <div
-      className="absolute overflow-hidden z-20 
-                  top-[25%] left-[29%] lg:w-[31%] h-[45.5%]
+      className="absolute overflow-hidden z-10 
+                  lg:top-[15.5%] lg:left-[25.5%] lg:w-[39%] lg:h-[52.5%]
                   sm:top-[20%] sm:left-[25%] sm:w-[60%] sm:h-[40%]
-                  md:top-[25%] md:left-[29%] md:w-[31%] md:h-[45%]"
+                  md:top-[15.5%] md:left-[25.5%] md:w-[51%] md:h-[45%]"
     >
       {projectComponents[currentProject] || <About />}
     </div>
