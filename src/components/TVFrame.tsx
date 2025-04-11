@@ -25,12 +25,14 @@ const projectLinks: ProjectLink[] = [
     demo: "https://lbare.github.io/AlderGreens/",
     github: "https://github.com/lbare/AlderGreens",
   },
-  { demo: null, github: "https://github.com/lbare/secure-messaging" },
+  {
+    demo: "https://www.youtube.com/watch?v=0YGfevNMUJY",
+    github: "https://github.com/lbare/secure-messaging",
+  },
   { demo: null, github: "https://github.com/lbare/FilmEXIF" },
   {
     demo: null,
-    github:
-      "https://github.com/lbare?tab=repositories#:~:text=Star-,stat%2Dtracker,-Public",
+    github: "https://github.com/lbare/stat-tracker",
   },
   { demo: null, github: "https://github.com/lbare/weather" },
 ];
