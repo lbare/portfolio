@@ -37,7 +37,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
                 track of individual film rolls.
               </h1>
               <div className="flex w-full justify-start items-start">
-                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left text-nowrap">
+                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left">
                   <li>Add a photo to log time and location</li>
                   <li>Mark rolls as shot, developed, or scanned</li>
                   <li>Export JSON metadata to Lightroom for auto-tagging</li>

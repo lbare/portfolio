@@ -18,7 +18,7 @@ const UHub: React.FC = () => {
                 campus.
               </h1>
               <div className="flex w-full justify-start items-start">
-                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left text-nowrap">
+                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left">
                   <li>Explore vendors via interactive campus map</li>
                   <li>Instant menu keyword search (vegan? coffee?)</li>
                   <li>Real-time hours &amp; daily menu updates</li>
