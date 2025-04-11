@@ -11,10 +11,9 @@ function App() {
     <div className="flex items-center justify-center h-screen w-screen bg-[url('/src/assets/svg/lines.svg')] bg-auto bg-no-repeat bg-center pt-6">
       <div
         className="
-          relative       /* so children can be absolutely positioned */
+          relative
           h-full
-          max-w-fulls /* or any max width you like */
-          aspect-[4/3]   /* keep the TV in a 4:3 ratio (optional) */
+          aspect-[4/3]
           flex items-center justify-center
         "
       >
