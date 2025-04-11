@@ -6,6 +6,7 @@ interface TVFrameProps {
   setCurrentProject: React.Dispatch<React.SetStateAction<number>>;
   tvOn: boolean;
   setTvOn: (on: boolean) => void;
+  fullScreen: boolean;
   setFullScreen: (visible: boolean) => void;
 }
 
@@ -39,12 +40,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
   setCurrentProject,
   tvOn,
   setTvOn,
+  fullScreen,
   setFullScreen,
 }) => {
   const [knobPosition, setKnobPosition] = useState<number>(0);
 
   const handleKnobClick = () => {
     setKnobPosition((prev: number) => prev + 1);
+    if (fullScreen) setFullScreen(false);
     setCurrentProject((prev: number) => (prev + 1) % 7);
   };
 
@@ -53,8 +56,17 @@ const TVFrame: React.FC<TVFrameProps> = ({
     if (url) {
       window.open(url, "_blank");
     } else {
-      setFullScreen(true);
+      if (!fullScreen) {
+        setFullScreen(true);
+      } else {
+        setFullScreen(false);
+      }
     }
+  };
+
+  const handleVCRClick = (index: number) => {
+    if (fullScreen) setFullScreen(false);
+    setCurrentProject(index);
   };
 
   return (
@@ -103,7 +115,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
             <g id="VCR Buttons">
               <g
                 id="Home Button"
-                onClick={() => setCurrentProject(0)}
+                onClick={() => handleVCRClick(0)}
                 style={{
                   cursor: tvOn && currentProject !== 0 ? "pointer" : "default",
                 }}
@@ -160,7 +172,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="UHub Button"
-                onClick={() => setCurrentProject(1)}
+                onClick={() => handleVCRClick(1)}
                 style={{
                   cursor: tvOn && currentProject !== 1 ? "pointer" : "default",
                 }}
@@ -210,7 +222,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="Golf Button"
-                onClick={() => setCurrentProject(2)}
+                onClick={() => handleVCRClick(2)}
                 style={{
                   cursor: tvOn && currentProject !== 2 ? "pointer" : "default",
                 }}
@@ -260,7 +272,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="Messenger Button"
-                onClick={() => setCurrentProject(3)}
+                onClick={() => handleVCRClick(3)}
                 style={{
                   cursor: tvOn ? "pointer" : "default",
                 }}
@@ -310,7 +322,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="Camera Button"
-                onClick={() => setCurrentProject(4)}
+                onClick={() => handleVCRClick(4)}
                 style={{
                   cursor: tvOn && currentProject !== 4 ? "pointer" : "default",
                 }}
@@ -360,7 +372,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="Baseball Button"
-                onClick={() => setCurrentProject(5)}
+                onClick={() => handleVCRClick(5)}
                 style={{
                   cursor: tvOn && currentProject !== 5 ? "pointer" : "default",
                 }}
@@ -410,7 +422,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="Weather Button"
-                onClick={() => setCurrentProject(6)}
+                onClick={() => handleVCRClick(6)}
                 style={{
                   cursor: tvOn && currentProject !== 6 ? "pointer" : "default",
                 }}
