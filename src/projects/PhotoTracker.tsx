@@ -11,7 +11,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
     return (
       <div className="w-full h-full bg-gradient-to-br from-[#2e5835] from-20% to-[#1b4569] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center h-full z-20">
           <img
             src={photoTracker_1}
             alt="PhotoTracker Screenshot"

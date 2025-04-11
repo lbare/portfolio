@@ -11,7 +11,7 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
     return (
       <div className="w-full h-full bg-gradient-to-br from-[#5a5d5f] from-20% to-[#2f2f2f] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center h-full z-20">
           <img
             src={weather_1}
             alt="WeatherApp Screenshot"

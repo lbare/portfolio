@@ -11,7 +11,7 @@ const Messenger: React.FC<MessengerProps> = ({ fullScreen }) => {
     return (
       <div className="w-full h-full bg-gradient-to-br from-[#1f1f1f] from-20% to-[#4c1515] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
-        <div className="flex items-center justify-center h-full">
+        <div className="flex items-center justify-center h-full z-20">
           <img
             src={messenger_1}
             alt="Messenger Screenshot"
