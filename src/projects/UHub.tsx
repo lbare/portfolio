@@ -2,26 +2,7 @@ import React from "react";
 import { Code } from "@phosphor-icons/react";
 import uhub_1 from "../assets/images/uhub-1.png";
 
-interface UHubProps {
-  fullScreen: boolean;
-}
-
-const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
-  if (fullScreen) {
-    return (
-      <div className="w-full h-full bg-gradient-to-br from-[#154058] from-40% to-[#bc5e36] to-100% bg-cover flex flex-col items-center justify-center outline-none">
-        <div className="absolute inset-0 pointer-events-none grain-overlay" />
-        <div className="flex items-center justify-center h-full">
-          <img
-            src={uhub_1}
-            alt="UHub Screenshot"
-            className="h-full w-auto rounded-3xl"
-          />
-        </div>
-      </div>
-    );
-  }
-
+const UHub: React.FC = () => {
   return (
     <div className="w-full h-full bg-gradient-to-tr from-[#154058] from-40% to-[#bc5e36] to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
@@ -37,11 +18,11 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
                 campus.
               </h1>
               <div className="flex w-full justify-start items-start">
-                <h1 className="font-albert text-sm text-white text-left text-nowrap">
-                  <li>Explore vendors with interactive map</li>
-                  <li>Search menus of food by keyword</li>
-                  <li>Get updated hours and daily menus</li>
-                </h1>
+                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left text-nowrap">
+                  <li>Explore vendors via interactive campus map</li>
+                  <li>Instant menu keyword search (vegan? coffee?)</li>
+                  <li>Real-time hours &amp; daily menu updates</li>
+                </ul>
               </div>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">

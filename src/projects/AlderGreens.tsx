@@ -2,26 +2,7 @@ import React from "react";
 import { Code } from "@phosphor-icons/react";
 import aldergreens_1 from "../assets/images/aldergreens-1.png";
 
-interface AlderGreensProps {
-  fullScreen: boolean;
-}
-
-const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
-  if (fullScreen) {
-    return (
-      <div className="w-full h-full bg-gradient-to-br from-[#3d523f] from-20% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
-        <div className="absolute inset-0 pointer-events-none grain-overlay" />
-        <div className="flex items-center justify-center h-full">
-          <img
-            src={aldergreens_1}
-            alt="AlderGreens Screenshot"
-            className="h-full w-auto rounded-3xl"
-          />
-        </div>
-      </div>
-    );
-  }
-
+const AlderGreens: React.FC = () => {
   return (
     <div className="w-full h-full bg-gradient-to-br from-[#3d523f] from-20% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
@@ -37,11 +18,12 @@ const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
                 with my roommates. <br />
               </h1>
               <div className="flex w-full justify-start items-start">
-                <h1 className="font-albert text-sm text-white text-left">
-                  <li>Track each shot location</li>
-                  <li>Unique hole layouts for course</li>
+                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left">
                   <li>Game tracking and scores persist</li>
-                </h1>
+                  <li>Log every shot location with GPS pin</li>
+                  <li>Course-specific hole layouts</li>
+                  <li>Persistent stats &amp; personal-best analytics</li>
+                </ul>
               </div>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
