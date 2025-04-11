@@ -12,7 +12,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
-            src="/src/assets/photoTracker-1.png"
+            src="/src/assets/images/photoTracker-1.png"
             alt="PhotoTracker Screenshot"
             className="h-full w-auto rounded-3xl"
           />
@@ -36,11 +36,11 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
                 track of individual film rolls.
               </h1>
               <div className="flex w-full justify-start items-start">
-                <text className="font-albert text-sm text-white text-left text-nowrap">
+                <h1 className="font-albert text-sm text-white text-left text-nowrap">
                   <li>Add a photo to log time and location</li>
                   <li>Track across stages of development</li>
                   <li>Export as JSON to lightroom</li>
-                </text>
+                </h1>
               </div>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
@@ -52,7 +52,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-4/5">
             <img
-              src="/src/assets/photoTracker-1.png"
+              src="/src/assets/images/photoTracker-1.png"
               alt="PhotoTracker Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />

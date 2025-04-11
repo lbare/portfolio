@@ -8,11 +8,11 @@ interface AlderGreensProps {
 const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
   if (fullScreen) {
     return (
-      <div className="w-full h-full bg-gradient-to-br from-alderGreensDark from-20% to-alderGreensLight to-100% bg-cover flex flex-col items-center justify-center outline-none">
+      <div className="w-full h-full bg-gradient-to-br from-[#3d523f] from-20% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
-            src="/src/assets/aldergreens-1.png"
+            src="/src/assets/images/aldergreens-1.png"
             alt="AlderGreens Screenshot"
             className="h-full w-auto rounded-3xl"
           />
@@ -22,7 +22,7 @@ const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
   }
 
   return (
-    <div className="w-full h-full bg-gradient-to-br from-alderGreensDark from-20% to-alderGreensLight to-100% bg-cover flex flex-col items-center justify-center outline-none">
+    <div className="w-full h-full bg-gradient-to-br from-[#3d523f] from-20% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
       <div className="relative flex flex-col items-center justify-center h-full w-full z-10 px-4 p-4">
         <div className="flex flex-row items-center justify-evenly h-full w-full">
@@ -36,11 +36,11 @@ const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
                 with my roommates. <br />
               </h1>
               <div className="flex w-full justify-start items-start">
-                <text className="font-albert text-sm text-white text-left">
+                <h1 className="font-albert text-sm text-white text-left">
                   <li>Track each shot location</li>
                   <li>Unique hole layouts for course</li>
                   <li>Game tracking and scores persist</li>
-                </text>
+                </h1>
               </div>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
@@ -52,7 +52,7 @@ const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-4/5">
             <img
-              src="/src/assets/aldergreens-1.png"
+              src="/src/assets/images/aldergreens-1.png"
               alt="AlderGreens Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />

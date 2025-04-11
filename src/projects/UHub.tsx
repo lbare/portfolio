@@ -8,11 +8,11 @@ interface UHubProps {
 const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
   if (fullScreen) {
     return (
-      <div className="w-full h-full bg-gradient-to-br from-uhubDark from-40% to-uhubLight to-100% bg-cover flex flex-col items-center justify-center outline-none">
+      <div className="w-full h-full bg-gradient-to-br from-[#154058] from-40% to-[#bc5e36] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
-            src="/src/assets/uhub-1.png"
+            src="/src/assets/images/uhub-1.png"
             alt="UHub Screenshot"
             className="h-full w-auto rounded-3xl"
           />
@@ -22,7 +22,7 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
   }
 
   return (
-    <div className="w-full h-full bg-gradient-to-tr from-uhubDark from-40% to-uhubLight to-100% bg-cover flex flex-col items-center justify-center outline-none">
+    <div className="w-full h-full bg-gradient-to-tr from-[#154058] from-40% to-[#bc5e36] to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
       <div className="relative flex flex-col items-center justify-center h-full w-full z-10 p-4">
         <div className="flex flex-row items-center justify-center h-full w-full">
@@ -36,11 +36,11 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
                 campus.
               </h1>
               <div className="flex w-full justify-start items-start">
-                <text className="font-albert text-sm text-white text-left text-nowrap">
+                <h1 className="font-albert text-sm text-white text-left text-nowrap">
                   <li>Explore vendors with interactive map</li>
                   <li>Search menus of food by keyword</li>
                   <li>Get updated hours and daily menus</li>
-                </text>
+                </h1>
               </div>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
@@ -52,7 +52,7 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-full">
             <img
-              src="/src/assets/uhub-1.png"
+              src="/src/assets/images/uhub-1.png"
               alt="UHub Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />
