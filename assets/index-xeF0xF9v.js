@@ -74,5 +74,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
           h-full
           aspect-[4/3]
           flex items-center justify-center
-          border-4
         `,children:[n.jsx(c8,{currentProject:y,setCurrentProject:H,tvOn:Q,setTvOn:Z,fullScreen:C,setFullScreen:m}),n.jsx(Q9,{currentProject:y,fullScreen:C})]})})}r8.createRoot(document.getElementById("root")).render(n.jsx(rl.StrictMode,{children:n.jsx(U8,{})}));
