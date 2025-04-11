@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import TVFrame from "./components/TVFrame";
 import TVContent from "./components/TVContent";
+import TVFrameMobile from "./components/TVFrameMobile";
+import { isMobile } from "react-device-detect";
 
 function App() {
   const [currentProject, setCurrentProject] = useState<number>(0);
@@ -18,14 +20,25 @@ function App() {
           flex items-center justify-center
         "
       >
-        <TVFrame
-          currentProject={currentProject}
-          setCurrentProject={setCurrentProject}
-          tvOn={tvOn}
-          setTvOn={setTvOn}
-          fullScreen={fullScreen}
-          setFullScreen={setFullScreen}
-        />
+        {isMobile ? (
+          <TVFrameMobile
+            currentProject={currentProject}
+            setCurrentProject={setCurrentProject}
+            tvOn={tvOn}
+            setTvOn={setTvOn}
+            fullScreen={fullScreen}
+            setFullScreen={setFullScreen}
+          />
+        ) : (
+          <TVFrame
+            currentProject={currentProject}
+            setCurrentProject={setCurrentProject}
+            tvOn={tvOn}
+            setTvOn={setTvOn}
+            fullScreen={fullScreen}
+            setFullScreen={setFullScreen}
+          />
+        )}
         <TVContent currentProject={currentProject} fullScreen={fullScreen} />
       </div>
     </div>
