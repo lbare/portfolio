@@ -2,26 +2,7 @@ import React from "react";
 import { Code } from "@phosphor-icons/react";
 import messenger_1 from "../assets/images/messenger-1.png";
 
-interface MessengerProps {
-  fullScreen: boolean;
-}
-
-const Messenger: React.FC<MessengerProps> = ({ fullScreen }) => {
-  if (fullScreen) {
-    return (
-      <div className="w-full h-full bg-gradient-to-br from-[#1f1f1f] from-20% to-[#4c1515] to-100% bg-cover flex flex-col items-center justify-center outline-none">
-        <div className="absolute inset-0 pointer-events-none grain-overlay" />
-        <div className="flex items-center justify-center h-full z-20">
-          <img
-            src={messenger_1}
-            alt="Messenger Screenshot"
-            className="h-full w-auto"
-          />
-        </div>
-      </div>
-    );
-  }
-
+const Messenger: React.FC = () => {
   return (
     <div className="w-full h-full bg-gradient-to-br from-[#1f1f1f] from-20% to-[#4c1515] to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
