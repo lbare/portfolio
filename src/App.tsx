@@ -23,6 +23,7 @@ function App() {
           setCurrentProject={setCurrentProject}
           tvOn={tvOn}
           setTvOn={setTvOn}
+          fullScreen={fullScreen}
           setFullScreen={setFullScreen}
         />
         <TVContent currentProject={currentProject} fullScreen={fullScreen} />
