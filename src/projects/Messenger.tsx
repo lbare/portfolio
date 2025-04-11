@@ -27,7 +27,7 @@ const Messenger: React.FC<MessengerProps> = ({ fullScreen }) => {
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
       <div className="relative flex flex-col items-center justify-center h-full w-full z-10 px-4 p-4">
         <div className="flex flex-row items-center justify-evenly h-full w-full">
-          <div className="flex flex-col items-center justify-evenly h-11/12 w-5/6">
+          <div className="flex flex-col items-center justify-evenly h-11/12 w-4/6">
             <h1 className="text-center text-3xl font-calistoga text-white">
               Secure Messenger
             </h1>
