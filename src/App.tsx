@@ -44,7 +44,6 @@ function App() {
           h-full
           aspect-[4/3]
           flex items-center justify-center
-          border-4
         "
       >
         <TVFrame
