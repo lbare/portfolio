@@ -5,6 +5,7 @@ import TVContent from "./components/TVContent";
 
 function App() {
   const [currentProject, setCurrentProject] = useState<number>(0);
+  const [fullScreen, setFullScreen] = useState<boolean>(false);
   const [tvOn, setTvOn] = useState<boolean>(true);
 
   return (
@@ -22,8 +23,9 @@ function App() {
           setCurrentProject={setCurrentProject}
           tvOn={tvOn}
           setTvOn={setTvOn}
+          setFullScreen={setFullScreen}
         />
-        <TVContent currentProject={currentProject} />
+        <TVContent currentProject={currentProject} fullScreen={fullScreen} />
       </div>
     </div>
   );

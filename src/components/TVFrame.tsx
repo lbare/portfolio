@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { isMobile } from "react-device-detect";
 
 interface TVFrameProps {
-  currentProject: string;
-  setCurrentProject: (project: string) => void;
+  currentProject: number;
+  setCurrentProject: React.Dispatch<React.SetStateAction<number>>;
   tvOn: boolean;
   setTvOn: (on: boolean) => void;
+  setFullScreen: (visible: boolean) => void;
 }
 
 type ProjectLink = {
@@ -37,18 +39,21 @@ const TVFrame: React.FC<TVFrameProps> = ({
   setCurrentProject,
   tvOn,
   setTvOn,
+  setFullScreen,
 }) => {
-  const [knobPosition, setKnobPosition] = useState(0);
+  const [knobPosition, setKnobPosition] = useState<number>(0);
 
   const handleKnobClick = () => {
-    setKnobPosition((prev) => prev + 1);
-    setCurrentProject((prev) => (prev + 1) % 7);
+    setKnobPosition((prev: number) => prev + 1);
+    setCurrentProject((prev: number) => (prev + 1) % 7);
   };
 
   const handleOpenLink = (type: "demo" | "github") => {
     const url = projectLinks[currentProject][type];
     if (url) {
       window.open(url, "_blank");
+    } else {
+      setFullScreen(true);
     }
   };
 
@@ -59,7 +64,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
       viewBox="0 0 1262 1119"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute w-auto h-full object-cover z-40"
+      className={`absolute ${
+        isMobile ? "w-screen" : "w-auto h-full"
+      }  object-cover z-40`}
     >
       <g id="TV">
         <rect x="-209" y="-28" width="1689" height="1350" rx="20" />
