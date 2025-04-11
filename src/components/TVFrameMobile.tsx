@@ -69,7 +69,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
       viewBox="0 0 1025 1293"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute w-screen object-cover z-40"
+      className="absolute w-screen h-auto object-cover z-40"
     >
       <g id="TV">
         <rect x="-209" y="-8" width="1689" height="1350" rx="20" />
@@ -278,7 +278,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
               id="Home Button"
               onClick={() => handleVCRClick(0)}
               className={`drop-shadow-medium
-                ${tvOn && currentProject !== 0} ? "group" : "pointer-events-none"
+                ${
+                  tvOn && currentProject !== 0
+                } ? "group" : "pointer-events-none"
               `}
             >
               <rect
@@ -384,7 +386,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
               id="UHub Button"
               onClick={() => handleVCRClick(1)}
               className={`drop-shadow-medium
-                ${tvOn && currentProject !== 1} ? "group" : "pointer-events-none"
+                ${
+                  tvOn && currentProject !== 1
+                } ? "group" : "pointer-events-none"
               `}
             >
               <rect
@@ -437,7 +441,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
               id="Golf Button"
               onClick={() => handleVCRClick(2)}
               className={`drop-shadow-medium
-                ${tvOn && currentProject !== 2} ? "group" : "pointer-events-none"
+                ${
+                  tvOn && currentProject !== 2
+                } ? "group" : "pointer-events-none"
               `}
             >
               <rect
@@ -490,7 +496,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
               id="Messenger Button"
               onClick={() => handleVCRClick(3)}
               className={`drop-shadow-medium
-                ${tvOn && currentProject !== 3} ? "group" : "pointer-events-none"
+                ${
+                  tvOn && currentProject !== 3
+                } ? "group" : "pointer-events-none"
               `}
             >
               <rect
@@ -543,7 +551,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
               id="Camera Button"
               onClick={() => handleVCRClick(4)}
               className={`drop-shadow-medium
-                ${tvOn && currentProject !== 4} ? "group" : "pointer-events-none"
+                ${
+                  tvOn && currentProject !== 4
+                } ? "group" : "pointer-events-none"
               `}
             >
               <rect

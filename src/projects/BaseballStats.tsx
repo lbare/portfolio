@@ -1,12 +1,61 @@
 import React from "react";
 import { Code } from "@phosphor-icons/react";
 import baseballStats_1 from "../assets/images/baseballStats-1.png";
+import { isMobile } from "react-device-detect";
 
 interface BaseballStatsProps {
   fullScreen: boolean;
 }
 
 const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
+  if (isMobile && !fullScreen) {
+    return (
+      <div className="w-full h-full bg-gradient-to-tr from-[#354F60] from-40% to-[#FFD3AD] to-100% bg-cover flex flex-col items-center justify-center outline-none">
+        <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
+        <div className="relative flex flex-col items-center justify-center h-full w-full z-0 p-4">
+          <div className="flex flex-row items-center justify-center h-full w-full">
+            <div className="flex flex-col items-center justify-evenly h-full w-4/6">
+              <h1 className="text-center text-2xl font-calistoga text-white">
+                Baseball Stats
+              </h1>
+              <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+                <h1 className="font-albert text-sm text-white text-left">
+                  A centralized platform to discover and explore resources on
+                  UVic campus.
+                </h1>
+                <div className="flex w-full justify-start items-start">
+                  <ul className="list-disc list-outside pl-3 font-albert text-xs text-white text-left">
+                    <li>Explore vendors via interactive campus map</li>
+                    <li>Instant menu keyword search (vegan? coffee?)</li>
+                    <li>Real-time hours &amp; daily menu updates</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
+                <Code weight="bold" size={16} color="#FFCB8AFF" />
+                <h1 className="text-xs font-albert font-semibold text-orangeLight text-left text-nowrap">
+                  React Native | Expo | Firebase
+                </h1>
+              </div>
+            </div>
+            <div className="flex items-center justify-center h-full w-full">
+              <img
+                src={baseballStats_1}
+                alt="Baseball Screenshot"
+                className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
+              />
+            </div>
+            <div className="absolute bottom-1 left-0 w-full">
+              <h1 className="text-center text-xs font-albert italic text-white opacity-50">
+                *in progress
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-br from-[#354F60] from-20% to-[#FFD3AD] to-100% bg-cover flex flex-col items-center justify-center outline-none">
@@ -29,7 +78,7 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
         <div className="flex flex-row items-center justify-center h-full w-full">
           <div className="flex flex-col items-center justify-evenly h-5/6 w-4/6">
             <h1 className="text-center text-4xl font-calistoga text-white">
-              BaseballStats
+              Baseball Stats
             </h1>
             <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
               <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left">

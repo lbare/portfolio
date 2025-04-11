@@ -1,12 +1,51 @@
 import React from "react";
 import { Code } from "@phosphor-icons/react";
 import weather_1 from "../assets/images/weather-1.png";
+import { isMobile } from "react-device-detect";
 
 interface WeatherAppProps {
   fullScreen: boolean;
 }
 
 const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
+  if (isMobile && !fullScreen) {
+    return (
+      <div className="w-full h-full bg-gradient-to-tr from-[#5a5d5f] from-40% to-[#2f2f2f] to-100% bg-cover flex flex-col items-center justify-center outline-none">
+        <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
+        <div className="relative flex flex-col items-center justify-center h-full w-full z-0 p-4">
+          <div className="flex flex-row items-center justify-center h-full w-full">
+            <div className="flex flex-col items-center justify-evenly h-full w-4/6">
+              <h1 className="text-center text-2xl font-calistoga text-white">
+                Live Weather
+              </h1>
+              <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+                <h1 className="font-albert text-xs text-white text-left">
+                  Java application to display live weather data using the
+                  OpenWeather API. This was my very coding first project, ever.
+                  I like to keep it around to remember what got me into
+                  programming and how far I (hopefully) have come since.
+                </h1>
+              </div>
+              <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
+                <Code weight="bold" size={16} color="#FFCB8AFF" />
+                <h1 className="text-xs font-albert font-semibold text-orangeLight text-left text-nowrap">
+                  Java | JavaFX
+                </h1>
+              </div>
+            </div>
+            <div className="flex items-center justify-center h-full w-1/2">
+              <img
+                src={weather_1}
+                alt="Weather Screenshot"
+                className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   if (fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-br from-[#5a5d5f] from-20% to-[#2f2f2f] to-100% bg-cover flex flex-col items-center justify-center outline-none">

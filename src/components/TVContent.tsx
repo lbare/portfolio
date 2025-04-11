@@ -31,7 +31,7 @@ const TVContent: React.FC<TVContentProps> = ({
 
   if (isMobile) {
     return (
-      <div className="absolute overflow-hidden z-0 top-[29%] left-[32%] w-[29%] h-[29%]">
+      <div className="absolute overflow-hidden z-0 top-[21%] left-[33.5%] w-[33%] h-[33%]">
         <SelectedProject fullScreen={fullScreen} />
       </div>
     );
