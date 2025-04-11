@@ -5,8 +5,8 @@ import aldergreens_1 from "../assets/images/aldergreens-1.png";
 const AlderGreens: React.FC = () => {
   return (
     <div className="w-full h-full bg-gradient-to-br from-[#3d523f] from-20% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
-      <div className="absolute inset-0 pointer-events-none grain-overlay" />
-      <div className="relative flex flex-col items-center justify-center h-full w-full z-10 px-4 p-4">
+      <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
+      <div className="relative flex flex-col items-center justify-center h-full w-full z-0 px-4 p-4">
         <div className="flex flex-row items-center justify-evenly h-full w-full">
           <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
             <h1 className="text-center text-4xl font-calistoga text-white">
