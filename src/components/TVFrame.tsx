@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { isMobile } from "react-device-detect";
 
 interface TVFrameProps {
   currentProject: number;
@@ -78,9 +77,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
       viewBox="0 0 1262 1119"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute ${
-        isMobile ? "w-screen" : "w-auto h-full"
-      }  object-cover z-40`}
+      className="absolute w-auto h-full object-cover z-40"
     >
       <g id="TV">
         <rect x="-209" y="-28" width="1689" height="1350" rx="20" />
@@ -1012,6 +1009,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   fill="#313131"
                   stroke="black"
                   strokeWidth="10"
+                  className="drop-shadow-medium"
                 />
                 <path
                   id="Play button"
