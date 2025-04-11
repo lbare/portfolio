@@ -1,13 +1,68 @@
 import React from "react";
+import { Code } from "@phosphor-icons/react";
 
-const PhotoTracker: React.FC = () => {
+interface PhotoTrackerProps {
+  fullScreen: boolean;
+}
+
+const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
+  if (fullScreen) {
+    return (
+      <div className="w-full h-full bg-gradient-to-br from-[#2e5835] from-20% to-[#1b4569] to-100% bg-cover flex flex-col items-center justify-center outline-none">
+        <div className="absolute inset-0 pointer-events-none grain-overlay" />
+        <div className="flex items-center justify-center h-full">
+          <img
+            src="/src/assets/photoTracker-1.png"
+            alt="PhotoTracker Screenshot"
+            className="h-full w-auto rounded-3xl"
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full h-full bg-gradient-to-br from-startGrad from-20% to-endGrad to-100% bg-cover flex flex-col items-center justify-center outline-none">
+    <div className="w-full h-full bg-gradient-to-tr from-[#2e5835] from-20% to-[#1b4569] to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
-      <div className="relative flex flex-col items-center justify-center h-full w-full z-10">
-        <h1 className="text-center text-7xl font-calistoga text-white">
-          PhotoTracker
-        </h1>
+      <div className="relative flex flex-col items-center justify-center h-full w-full z-10 px-4 p-4">
+        <div className="flex flex-row items-center justify-evenly h-full w-full">
+          <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+            <h1 className="text-center text-4xl font-calistoga text-white">
+              FilmEXIF
+            </h1>
+            <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+              <h1 className="font-albert text-md text-white text-left">
+                A camera tool to store time, location and other metadata to keep
+                track of individual film rolls.
+              </h1>
+              <div className="flex w-full justify-start items-start">
+                <text className="font-albert text-sm text-white text-left text-nowrap">
+                  <li>Add a photo to log time and location</li>
+                  <li>Track across stages of development</li>
+                  <li>Export as JSON to lightroom</li>
+                </text>
+              </div>
+            </div>
+            <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
+              <Code weight="bold" size={32} color="#FFCB8AFF" />
+              <h1 className="text-lg font-albert font-semibold text-orangeLight text-left">
+                React | Vite | Firebase
+              </h1>
+            </div>
+          </div>
+          <div className="flex items-center justify-center h-full w-4/5">
+            <img
+              src="/src/assets/photoTracker-1.png"
+              alt="PhotoTracker Screenshot"
+              className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
+            />
+          </div>
+          <div className="absolute bottom-0 left-0 w-full">
+            <h1 className="text-center text-sm font-albert italic text-white opacity-50">
+              *in progress
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   );

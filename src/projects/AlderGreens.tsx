@@ -1,20 +1,37 @@
 import React from "react";
-import { Code, GithubLogo } from "@phosphor-icons/react";
+import { Code } from "@phosphor-icons/react";
 
-const AlderGreens: React.FC = () => {
+interface AlderGreensProps {
+  fullScreen: boolean;
+}
+
+const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
+  if (fullScreen) {
+    return (
+      <div className="w-full h-full bg-gradient-to-br from-alderGreensDark from-20% to-alderGreensLight to-100% bg-cover flex flex-col items-center justify-center outline-none">
+        <div className="absolute inset-0 pointer-events-none grain-overlay" />
+        <div className="flex items-center justify-center h-full">
+          <img
+            src="/src/assets/aldergreens-1.png"
+            alt="AlderGreens Screenshot"
+            className="h-full w-auto rounded-3xl"
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full h-full bg-gradient-to-br from-startGreenGrad from-20% to-endGreenGrad to-100% bg-cover flex flex-col items-center justify-center outline-none">
+    <div className="w-full h-full bg-gradient-to-br from-alderGreensDark from-20% to-alderGreensLight to-100% bg-cover flex flex-col items-center justify-center outline-none">
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
       <div className="relative flex flex-col items-center justify-center h-full w-full z-10 px-4 p-4">
-        <div className="flex flex-col items-center justify-center h-1/6">
-          <h1 className="text-center text-4xl font-calistoga text-white">
-            AlderGreens
-          </h1>
-        </div>
-        <div className="flex flex-row items-center justify-center h-5/6 w-full">
-          <div className="flex flex-col items-center justify-evenly h-full w-full">
+        <div className="flex flex-row items-center justify-evenly h-full w-full">
+          <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+            <h1 className="text-center text-4xl font-calistoga text-white">
+              AlderGreens
+            </h1>
             <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
-              <h1 className="font-albert text-white text-left">
+              <h1 className="font-albert text-md text-white text-left">
                 A mobile web app designed to track scores for bragging rights
                 with my roommates. <br />
               </h1>
@@ -33,11 +50,11 @@ const AlderGreens: React.FC = () => {
               </h1>
             </div>
           </div>
-          <div className="flex items-center justify-center h-11/12 w-4/5">
+          <div className="flex items-center justify-center h-full w-4/5">
             <img
               src="/src/assets/aldergreens-1.png"
               alt="AlderGreens Screenshot"
-              className="h-full w-auto rounded-3xl drop-shadow-screenshot border-4 border-white"
+              className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />
           </div>
         </div>
