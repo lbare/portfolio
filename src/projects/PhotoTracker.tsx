@@ -15,7 +15,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
           <img
             src={photoTracker_1}
             alt="PhotoTracker Screenshot"
-            className="h-full w-auto rounded-3xl"
+            className="h-full w-auto"
           />
         </div>
       </div>
@@ -37,11 +37,11 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
                 track of individual film rolls.
               </h1>
               <div className="flex w-full justify-start items-start">
-                <h1 className="font-albert text-sm text-white text-left text-nowrap">
+                <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left text-nowrap">
                   <li>Add a photo to log time and location</li>
-                  <li>Track across stages of development</li>
-                  <li>Export as JSON to lightroom</li>
-                </h1>
+                  <li>Mark rolls as shot, developed, or scanned</li>
+                  <li>Export JSON metadata to Lightroom for auto-tagging</li>
+                </ul>
               </div>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">

@@ -15,7 +15,7 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
           <img
             src={baseballStats_1}
             alt="BaseballStats Screenshot"
-            className="h-full w-auto rounded-3xl"
+            className="h-full w-auto"
           />
         </div>
       </div>
@@ -32,13 +32,13 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
               BaseballStats
             </h1>
             <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
-              <h1 className="font-albert text-md text-white text-left">
+               <ul className="list-disc list-outside pl-2 font-albert text-md text-white text-left">
                 I started making this app to track my (men's league) baseball
                 stats, but it has ended up being a great way to dive into React
                 Native and UI design for the first time. This has been on the
                 backburner as it's not the most practical project, but will be
                 finished soon!
-              </h1>
+              </ul>
             </div>
             <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
               <Code weight="bold" size={32} color="#FFCB8AFF" />

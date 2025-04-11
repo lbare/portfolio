@@ -15,7 +15,7 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
           <img
             src={weather_1}
             alt="WeatherApp Screenshot"
-            className="h-full w-auto rounded-3xl"
+            className="h-full w-auto"
           />
         </div>
       </div>
