@@ -9,7 +9,7 @@ interface BaseballStatsProps {
 const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
   if (fullScreen) {
     return (
-      <div className="w-full h-full bg-gradient-to-br from-[#2e5835] from-20% to-[#1b4569] to-100% bg-cover flex flex-col items-center justify-center outline-none">
+      <div className="w-full h-full bg-gradient-to-br from-[#354F60] from-20% to-[#FFD3AD] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
