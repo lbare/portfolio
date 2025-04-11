@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <div className="absolute inset-0 pointer-events-none grain-overlay" />
       <div className="relative flex flex-col items-center justify-center h-full w-full z-10">
         <h1 className="text-center lg:text-4xl sm:text-4xl font-calistoga text-white">
-          Hi, I'm Levi
+          Test
         </h1>
       </div>
     </div>

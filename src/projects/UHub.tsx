@@ -1,5 +1,6 @@
 import React from "react";
 import { Code } from "@phosphor-icons/react";
+import uhub_1 from "../assets/images/uhub-1.png";
 
 interface UHubProps {
   fullScreen: boolean;
@@ -12,7 +13,7 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
-            src="/src/assets/images/uhub-1.png"
+            src={uhub_1}
             alt="UHub Screenshot"
             className="h-full w-auto rounded-3xl"
           />
@@ -52,7 +53,7 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-full">
             <img
-              src="/src/assets/images/uhub-1.png"
+              src={uhub_1}
               alt="UHub Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />

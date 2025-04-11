@@ -1,5 +1,6 @@
 import React from "react";
 import { Code } from "@phosphor-icons/react";
+import baseballStats_1 from "../assets/images/baseballStats-1.png";
 
 interface BaseballStatsProps {
   fullScreen: boolean;
@@ -12,7 +13,7 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
-            src="/src/assets/images/baseballStats-1.png"
+            src={baseballStats_1}
             alt="BaseballStats Screenshot"
             className="h-full w-auto rounded-3xl"
           />
@@ -48,7 +49,7 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-full">
             <img
-              src="/src/assets/images/baseballStats-1.png"
+              src={baseballStats_1}
               alt="BaseballStats Screenshot"
               className="h-5/6 w-auto rounded-2xl drop-shadow-screenshot"
             />

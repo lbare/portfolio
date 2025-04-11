@@ -1,5 +1,6 @@
 import React from "react";
 import { Code } from "@phosphor-icons/react";
+import photoTracker_1 from "../assets/images/photoTracker-1.png";
 
 interface PhotoTrackerProps {
   fullScreen: boolean;
@@ -12,7 +13,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full">
           <img
-            src="/src/assets/images/photoTracker-1.png"
+            src={photoTracker_1}
             alt="PhotoTracker Screenshot"
             className="h-full w-auto rounded-3xl"
           />
@@ -52,7 +53,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-4/5">
             <img
-              src="/src/assets/images/photoTracker-1.png"
+              src={photoTracker_1}
               alt="PhotoTracker Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />
