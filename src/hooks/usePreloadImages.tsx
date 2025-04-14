@@ -21,6 +21,7 @@ import uhub_4 from "../assets/images/uhub-4.png";
 import uhub_5 from "../assets/images/uhub-5.png";
 import weather_1 from "../assets/images/weather-1.png";
 import weather_2 from "../assets/images/weather-2.png";
+import about from "../assets/images/about.png";
 
 export const projectImages = [
   aldergreens_1,
@@ -45,6 +46,7 @@ export const projectImages = [
   uhub_5,
   weather_1,
   weather_2,
+  about,
 ];
 
 const usePreloadImages = () => {
