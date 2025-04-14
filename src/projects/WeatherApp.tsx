@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
-import weather_1 from "../assets/images/weather-1.png";
 import { isMobile } from "react-device-detect";
 
 interface WeatherAppProps {
   fullScreen: boolean;
 }
 
+const images: string[] = [
+  "/src/assets/images/weather-1.png",
+  "/src/assets/images/weather-2.png",
+];
+
 const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
+  const [index, setIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, [index]);
+
   if (isMobile && !fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#5a5d5f] from-40% to-[#2f2f2f] to-100% bg-cover flex flex-col items-center justify-center outline-none">
@@ -35,9 +48,9 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
             </div>
             <div className="flex items-center justify-center h-full w-1/2">
               <img
-                src={weather_1}
+                src={images[index]}
                 alt="Weather Screenshot"
-                className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
+                className="h-5/6 w-auto rounded drop-shadow-screenshot"
               />
             </div>
           </div>
@@ -52,7 +65,7 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full z-20">
           <img
-            src={weather_1}
+            src={images[index]}
             alt="WeatherApp Screenshot"
             className="h-full w-auto"
           />
@@ -87,9 +100,9 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-4/5">
             <img
-              src={weather_1}
+              src={images[index]}
               alt="WeatherApp Screenshot"
-              className="h-5/6 w-auto rounded-lg drop-shadow-screenshot"
+              className="h-5/6 w-auto rounded drop-shadow-screenshot"
             />
           </div>
         </div>

@@ -17,11 +17,11 @@ type ProjectLink = {
 const projectLinks: ProjectLink[] = [
   { demo: null, github: "https://github.com/lbare/portfolio" },
   {
-    demo: "https://lbare.github.io/UHub/",
+    demo: null,
     github: "https://github.com/lbare/UHub",
   },
   {
-    demo: "https://lbare.github.io/AlderGreens/",
+    demo: null,
     github: "https://github.com/lbare/AlderGreens",
   },
   {

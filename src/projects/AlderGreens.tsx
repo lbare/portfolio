@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Code } from "@phosphor-icons/react";
-import aldergreens_1 from "../assets/images/aldergreens-1.png";
 import { isMobile } from "react-device-detect";
 
-const AlderGreens: React.FC = () => {
-  if (isMobile) {
+interface AlderGreensProps {
+  fullScreen: boolean;
+}
+
+const images: string[] = [
+  "/src/assets/images/alderGreens-1.png",
+  "/src/assets/images/alderGreens-2.png",
+  "/src/assets/images/alderGreens-3.png",
+  "/src/assets/images/alderGreens-4.png",
+  "/src/assets/images/alderGreens-5.png",
+  "/src/assets/images/alderGreens-6.png",
+  "/src/assets/images/alderGreens-7.png",
+];
+
+const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {
+  const [index, setIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, [index]);
+
+  if (isMobile && !fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#3d523f] from-40% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
@@ -37,12 +59,27 @@ const AlderGreens: React.FC = () => {
             </div>
             <div className="flex items-center justify-center h-full w-1/2">
               <img
-                src={aldergreens_1}
+                src={images[index]}
                 alt="AlderGreens Screenshot"
                 className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
               />
             </div>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (fullScreen) {
+    return (
+      <div className="w-full h-full bg-gradient-to-br from-[#3d523f] from-20% to-[#80a082] to-100% bg-cover flex flex-col items-center justify-center outline-none">
+        <div className="absolute inset-0 pointer-events-none grain-overlay" />
+        <div className="flex items-center justify-center h-full z-20">
+          <img
+            src={images[index]}
+            alt="BaseballStats Screenshot"
+            className="h-full w-auto"
+          />
         </div>
       </div>
     );
@@ -80,7 +117,7 @@ const AlderGreens: React.FC = () => {
           </div>
           <div className="flex items-center justify-center h-full w-4/5">
             <img
-              src={aldergreens_1}
+              src={images[index]}
               alt="AlderGreens Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />

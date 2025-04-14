@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
-import photoTracker_1 from "../assets/images/photoTracker-1.png";
 import { isMobile } from "react-device-detect";
 
 interface PhotoTrackerProps {
   fullScreen: boolean;
 }
 
+const images: string[] = [
+  "/src/assets/images/photoTracker-1.jpeg",
+  "/src/assets/images/photoTracker-2.jpeg",
+];
+
 const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
+  const [index, setIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, [index]);
+
   if (fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#2e5835] from-20% to-[#1b4569] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay" />
         <div className="flex items-center justify-center h-full z-20">
           <img
-            src={photoTracker_1}
+            src={images[index]}
             alt="PhotoTracker Screenshot"
             className="h-full w-auto"
           />
@@ -55,7 +68,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
             </div>
             <div className="flex items-center justify-center h-full w-1/2">
               <img
-                src={photoTracker_1}
+                src={images[index]}
                 alt="PhotoTracker Screenshot"
                 className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
               />
@@ -102,7 +115,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
           </div>
           <div className="flex items-center justify-center h-full w-4/5">
             <img
-              src={photoTracker_1}
+              src={images[index]}
               alt="PhotoTracker Screenshot"
               className="h-5/6 w-auto rounded-xl drop-shadow-screenshot"
             />
