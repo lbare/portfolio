@@ -77,7 +77,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
       viewBox="0 0 1262 1119"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute w-auto h-full object-cover z-40"
+      className="absolute w-auto h-full object-cover z-40 pointer-events-none"
     >
       <g id="TV">
         <rect x="-209" y="-28" width="1689" height="1350" rx="20" />
@@ -117,6 +117,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(0)}
                 style={{
                   cursor: tvOn && currentProject !== 0 ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 0 ? "group" : "pointer-events-none"
@@ -174,6 +175,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(1)}
                 style={{
                   cursor: tvOn && currentProject !== 1 ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 1 ? "group" : "pointer-events-none"
@@ -224,6 +226,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(2)}
                 style={{
                   cursor: tvOn && currentProject !== 2 ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 2 ? "group" : "pointer-events-none"
@@ -274,6 +277,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(3)}
                 style={{
                   cursor: tvOn ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 3 ? "group" : "pointer-events-none"
@@ -324,6 +328,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(4)}
                 style={{
                   cursor: tvOn && currentProject !== 4 ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 4 ? "group" : "pointer-events-none"
@@ -374,6 +379,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(5)}
                 style={{
                   cursor: tvOn && currentProject !== 5 ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 5 ? "group" : "pointer-events-none"
@@ -424,6 +430,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleVCRClick(6)}
                 style={{
                   cursor: tvOn && currentProject !== 6 ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`drop-shadow-medium ${
                   tvOn && currentProject !== 6 ? "group" : "pointer-events-none"
@@ -668,6 +675,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   onClick={tvOn ? handleKnobClick : undefined}
                   style={{
                     cursor: tvOn ? "pointer" : "default",
+                    pointerEvents: "auto",
                   }}
                 >
                   <circle
@@ -696,7 +704,10 @@ const TVFrame: React.FC<TVFrameProps> = ({
               <g
                 id="Power Button"
                 onClick={() => setTvOn(!tvOn)}
-                style={{ cursor: "pointer" }}
+                style={{
+                  cursor: "pointer",
+                  pointerEvents: "auto",
+                }}
                 className="group drop-shadow-medium"
               >
                 <g id="Ellipse 10" filter="url(#filter2_d_0_1)">
@@ -996,6 +1007,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleOpenLink("demo")}
                 style={{
                   cursor: tvOn ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`${tvOn ? "group" : "pointer-events-none"}`}
               >
@@ -1012,8 +1024,8 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   className="drop-shadow-medium"
                 />
                 <path
-                  id="Play button"
-                  d="M1077.77 495.333C1077.77 495.775 1077.59 496.199 1077.28 496.512C1076.97 496.824 1076.55 497 1076.12 497H1062.88C1062.45 497 1062.03 496.824 1061.72 496.512C1061.41 496.199 1061.23 495.775 1061.23 495.333C1061.23 494.891 1061.41 494.467 1061.72 494.155C1062.03 493.842 1062.45 493.667 1062.88 493.667H1076.12C1076.55 493.667 1076.97 493.842 1077.28 494.155C1077.59 494.467 1077.77 494.891 1077.77 495.333ZM1091 462V485.333C1091 486.659 1090.48 487.931 1089.55 488.869C1088.62 489.807 1087.35 490.333 1086.04 490.333H1052.96C1051.65 490.333 1050.38 489.807 1049.45 488.869C1048.52 487.931 1048 486.659 1048 485.333V462C1048 460.674 1048.52 459.402 1049.45 458.464C1050.38 457.527 1051.65 457 1052.96 457H1086.04C1087.35 457 1088.62 457.527 1089.55 458.464C1090.48 459.402 1091 460.674 1091 462ZM1076.94 473.667C1076.94 473.399 1076.88 473.135 1076.76 472.898C1076.63 472.66 1076.46 472.456 1076.24 472.302L1067.97 466.469C1067.72 466.294 1067.43 466.191 1067.13 466.171C1066.83 466.151 1066.52 466.215 1066.26 466.355C1065.99 466.496 1065.76 466.708 1065.61 466.969C1065.45 467.229 1065.37 467.528 1065.37 467.833V479.5C1065.37 479.805 1065.45 480.104 1065.61 480.365C1065.76 480.625 1065.99 480.837 1066.26 480.978C1066.52 481.119 1066.83 481.183 1067.13 481.163C1067.43 481.143 1067.72 481.04 1067.97 480.865L1076.24 475.031C1076.46 474.878 1076.63 474.673 1076.76 474.436C1076.88 474.198 1076.94 473.934 1076.94 473.667Z"
+                  id="Vector_2"
+                  d="M1087.15 463.773V471.591C1087.15 472.109 1086.95 472.606 1086.58 472.973C1086.21 473.34 1085.71 473.545 1085.19 473.545C1084.67 473.545 1084.17 473.34 1083.81 472.973C1083.44 472.606 1083.23 472.109 1083.23 471.591V465.727H1077.35C1076.83 465.727 1076.33 465.521 1075.96 465.155C1075.59 464.788 1075.38 464.291 1075.38 463.773C1075.38 463.254 1075.59 462.757 1075.96 462.391C1076.33 462.024 1076.83 461.818 1077.35 461.818H1085.19C1085.71 461.818 1086.21 462.024 1086.58 462.391C1086.95 462.757 1087.15 463.254 1087.15 463.773ZM1061.65 485.273H1055.77V479.409C1055.77 478.891 1055.56 478.394 1055.19 478.027C1054.83 477.66 1054.33 477.455 1053.81 477.455C1053.29 477.455 1052.79 477.66 1052.42 478.027C1052.05 478.394 1051.85 478.891 1051.85 479.409V487.227C1051.85 487.746 1052.05 488.243 1052.42 488.609C1052.79 488.976 1053.29 489.182 1053.81 489.182H1061.65C1062.17 489.182 1062.67 488.976 1063.04 488.609C1063.41 488.243 1063.62 487.746 1063.62 487.227C1063.62 486.709 1063.41 486.212 1063.04 485.845C1062.67 485.479 1062.17 485.273 1061.65 485.273ZM1095 457.909V493.091C1095 494.128 1094.59 495.122 1093.85 495.855C1093.12 496.588 1092.12 497 1091.08 497H1047.92C1046.88 497 1045.88 496.588 1045.15 495.855C1044.41 495.122 1044 494.128 1044 493.091V457.909C1044 456.872 1044.41 455.878 1045.15 455.145C1045.88 454.412 1046.88 454 1047.92 454H1091.08C1092.12 454 1093.12 454.412 1093.85 455.145C1094.59 455.878 1095 456.872 1095 457.909ZM1091.08 493.091V457.909H1047.92V493.091H1091.08Z"
                   fill="white"
                   className="group-hover:fill-[#b0b0b0]"
                 />
@@ -1023,6 +1035,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 onClick={() => handleOpenLink("github")}
                 style={{
                   cursor: tvOn ? "pointer" : "default",
+                  pointerEvents: "auto",
                 }}
                 className={`${tvOn ? "group" : "pointer-events-none"}`}
               >
