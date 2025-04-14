@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobile } from "react-device-detect";
+import uhub_1 from "../assets/images/uhub-1.png";
+import uhub_2 from "../assets/images/uhub-2.png";
+import uhub_3 from "../assets/images/uhub-3.png";
+import uhub_4 from "../assets/images/uhub-4.png";
+import uhub_5 from "../assets/images/uhub-5.png";
 
 interface UHubProps {
   fullScreen: boolean;
 }
 
-const images: string[] = [
-  "/src/assets/images/uhub-1.png",
-  "/src/assets/images/uhub-2.png",
-  "/src/assets/images/uhub-3.png",
-  "/src/assets/images/uhub-4.png",
-  "/src/assets/images/uhub-5.png",
-];
+const images: string[] = [uhub_1, uhub_2, uhub_3, uhub_4, uhub_5];
 
 const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
   const [index, setIndex] = useState<number>(0);

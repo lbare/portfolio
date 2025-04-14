@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobile } from "react-device-detect";
+import baseballStats_1 from "../assets/images/baseballStats-1.png";
+import baseballStats_2 from "../assets/images/baseballStats-2.png";
+import baseballStats_3 from "../assets/images/baseballStats-3.png";
+import baseballStats_4 from "../assets/images/baseballStats-4.png";
+import baseballStats_5 from "../assets/images/baseballStats-5.png";
 
 interface BaseballStatsProps {
   fullScreen: boolean;
 }
 
 const images: string[] = [
-  "/src/assets/images/baseballStats-1.png",
-  "/src/assets/images/baseballStats-2.png",
-  "/src/assets/images/baseballStats-3.png",
-  "/src/assets/images/baseballStats-4.png",
-  "/src/assets/images/baseballStats-5.png",
+  baseballStats_1,
+  baseballStats_2,
+  baseballStats_3,
+  baseballStats_4,
+  baseballStats_5,
 ];
 
 const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {

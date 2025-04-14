@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobile } from "react-device-detect";
+import weather_1 from "../assets/images/weather-1.png";
+import weather_2 from "../assets/images/weather-2.png";
 
 interface WeatherAppProps {
   fullScreen: boolean;
 }
 
-const images: string[] = [
-  "/src/assets/images/weather-1.png",
-  "/src/assets/images/weather-2.png",
-];
+const images: string[] = [weather_1, weather_2];
 
 const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
   const [index, setIndex] = useState<number>(0);

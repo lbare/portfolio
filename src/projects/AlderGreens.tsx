@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobile } from "react-device-detect";
+import alderGreens_1 from "../assets/images/alderGreens-1.png";
+import alderGreens_2 from "../assets/images/alderGreens-2.png";
+import alderGreens_3 from "../assets/images/alderGreens-3.png";
+import alderGreens_4 from "../assets/images/alderGreens-4.png";
+import alderGreens_5 from "../assets/images/alderGreens-5.png";
+import alderGreens_6 from "../assets/images/alderGreens-6.png";
+import alderGreens_7 from "../assets/images/alderGreens-7.png";
 
 interface AlderGreensProps {
   fullScreen: boolean;
 }
 
 const images: string[] = [
-  "/src/assets/images/alderGreens-1.png",
-  "/src/assets/images/alderGreens-2.png",
-  "/src/assets/images/alderGreens-3.png",
-  "/src/assets/images/alderGreens-4.png",
-  "/src/assets/images/alderGreens-5.png",
-  "/src/assets/images/alderGreens-6.png",
-  "/src/assets/images/alderGreens-7.png",
+  alderGreens_1,
+  alderGreens_2,
+  alderGreens_3,
+  alderGreens_4,
+  alderGreens_5,
+  alderGreens_6,
+  alderGreens_7,
 ];
 
 const AlderGreens: React.FC<AlderGreensProps> = ({ fullScreen }) => {

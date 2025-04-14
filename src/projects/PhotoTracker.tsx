@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobile } from "react-device-detect";
+import photoTracker_1 from "../assets/images/photoTracker-1.jpeg";
+import photoTracker_2 from "../assets/images/photoTracker-2.jpeg";
 
 interface PhotoTrackerProps {
   fullScreen: boolean;
 }
 
-const images: string[] = [
-  "/src/assets/images/photoTracker-1.jpeg",
-  "/src/assets/images/photoTracker-2.jpeg",
-];
+const images: string[] = [photoTracker_1, photoTracker_2];
 
 const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
   const [index, setIndex] = useState<number>(0);
