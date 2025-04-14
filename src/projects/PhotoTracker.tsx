@@ -16,7 +16,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2500);
+    }, 2000);
     return () => clearTimeout(timer);
   }, [index]);
 
