@@ -16,6 +16,7 @@
     "react": "^19.0.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^19.0.0",
+    "react-loader-spinner": "^6.1.6",
     "tailwindcss": "^4.1.1"
   },
   "devDependencies": {
