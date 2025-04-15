@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import uhub_1 from "../assets/images/uhub-1.png";
 import uhub_2 from "../assets/images/uhub-2.png";
 import uhub_3 from "../assets/images/uhub-3.png";
@@ -23,7 +23,7 @@ const UHub: React.FC<UHubProps> = ({ fullScreen }) => {
     return () => clearTimeout(timer);
   }, [index]);
 
-  if (isMobile && !fullScreen) {
+  if (isMobileOnly && !fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#154058] from-40% to-[#bc5e36] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />

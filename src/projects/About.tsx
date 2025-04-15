@@ -69,12 +69,14 @@ const About: React.FC<AboutProps> = ({ fullScreen }) => {
   }
 
   if (fullScreen) {
-    <div className="w-full h-full bg-gradient-to-tr from-[#313131] from-20% to-[#515151] to-100% bg-cover flex flex-col items-center justify-center outline-none">
-      <div className="absolute inset-0 pointer-events-none grain-overlay" />
-      <div className="flex items-center justify-center h-full z-20">
-        <img src={about} alt="About Screenshot" className="h-full w-auto" />
+    return (
+      <div className="w-full h-full bg-gradient-to-tr from-[#313131] from-20% to-[#515151] to-100% bg-cover flex flex-col items-center justify-center outline-none">
+        <div className="absolute inset-0 pointer-events-none grain-overlay" />
+        <div className="flex items-center justify-center h-full z-20">
+          <img src={about} alt="About Screenshot" className="h-full w-auto" />
+        </div>
       </div>
-    </div>;
+    );
   }
 
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import baseballStats_1 from "../assets/images/baseballStats-1.png";
 import baseballStats_2 from "../assets/images/baseballStats-2.png";
 import baseballStats_3 from "../assets/images/baseballStats-3.png";
@@ -29,7 +29,7 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
     return () => clearTimeout(timer);
   }, [index]);
 
-  if (isMobile && !fullScreen) {
+  if (isMobileOnly && !fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#354F60] from-40% to-[#FFD3AD] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />

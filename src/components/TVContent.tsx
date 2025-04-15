@@ -6,7 +6,7 @@ import UHub from "../projects/UHub";
 import PhotoTracker from "../projects/PhotoTracker";
 import Messenger from "../projects/Messenger";
 import WeatherApp from "../projects/WeatherApp";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly, isTablet } from "react-device-detect";
 
 interface TVContentProps {
   currentProject: number;
@@ -44,9 +44,18 @@ const TVContent: React.FC<TVContentProps> = ({
     }
   }, [currentProject, tvOn]);
 
-  if (isMobile) {
+  if (isMobileOnly) {
     return (
       <div className="absolute overflow-hidden z-0 top-[20%] left-[33%] w-[34%] h-[34%]">
+        <SelectedProject fullScreen={fullScreen} />
+        {flickerOverlay}
+      </div>
+    );
+  }
+
+  if (isTablet) {
+    return (
+      <div className="absolute overflow-hidden z-0 top-[10%] left-[19%] w-[49%] h-[50%]">
         <SelectedProject fullScreen={fullScreen} />
         {flickerOverlay}
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import photoTracker_1 from "../assets/images/photoTracker-1.jpeg";
 import photoTracker_2 from "../assets/images/photoTracker-2.jpeg";
 
@@ -35,7 +35,7 @@ const PhotoTracker: React.FC<PhotoTrackerProps> = ({ fullScreen }) => {
     );
   }
 
-  if (isMobile) {
+  if (isMobileOnly) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#2e5835] from-40% to-[#1b4569] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />

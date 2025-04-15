@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import weather_1 from "../assets/images/weather-1.png";
 import weather_2 from "../assets/images/weather-2.png";
 
@@ -20,7 +20,7 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
     return () => clearTimeout(timer);
   }, [index]);
 
-  if (isMobile && !fullScreen) {
+  if (isMobileOnly && !fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#5a5d5f] from-40% to-[#2f2f2f] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
