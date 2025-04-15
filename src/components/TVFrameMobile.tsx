@@ -89,7 +89,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
               rx="21"
               fill="#C2AD94"
               stroke="black"
-              stroke-width="12"
+              strokeWidth="12"
             />
           </g>
           <g id="TV_2">
@@ -102,7 +102,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   d="M118 819H211L207.483 850.657C206.639 858.253 200.218 864 192.574 864H136.426C128.782 864 122.361 858.253 121.517 850.657L118 819Z"
                   fill="#313131"
                   stroke="black"
-                  stroke-width="24"
+                  strokeWidth="24"
                   mask="url(#path-6-inside-1_0_1)"
                 />
               </g>
@@ -114,7 +114,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   d="M815 819H908L904.483 850.656C903.639 858.253 897.218 864 889.574 864H833.426C825.782 864 819.361 858.253 818.517 850.656L815 819Z"
                   fill="#313131"
                   stroke="black"
-                  stroke-width="24"
+                  strokeWidth="24"
                   mask="url(#path-7-inside-2_0_1)"
                 />
               </g>
@@ -127,25 +127,25 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 d="M73 773H952L945.721 819.731C944.855 826.184 939.348 831 932.837 831H92.1628C85.6521 831 80.1455 826.184 79.2785 819.731L73 773Z"
                 fill="#313131"
                 stroke="black"
-                stroke-width="24"
+                strokeWidth="24"
                 mask="url(#path-8-inside-3_0_1)"
               />
             </g>
             <g id="Body">
               <mask id="path-9-inside-4_0_1" fill="white">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M27 0C12.0883 0 0 12.0883 0 27V758C0 772.912 12.0883 785 27 785H998C1012.91 785 1025 772.912 1025 758V27C1025 12.0883 1012.91 0 998 0L27 0ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                 />
               </mask>
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M27 0C12.0883 0 0 12.0883 0 27V758C0 772.912 12.0883 785 27 785H998C1012.91 785 1025 772.912 1025 758V27C1025 12.0883 1012.91 0 998 0L27 0ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                 fill="#C2AD94"
                 stroke="black"
-                stroke-width="24"
+                strokeWidth="24"
                 mask="url(#path-9-inside-4_0_1)"
               />
             </g>
@@ -162,23 +162,23 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 <g id="Screen" filter="url(#filter0_d_0_1)">
                   <mask id="path-11-inside-5_0_1" fill="white">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M63 37C49.1929 37 38 48.1929 38 62V723C38 736.807 49.1929 748 63 748H962C975.807 748 987 736.807 987 723V62C987 48.1929 975.807 37 962 37H63ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                     />
                   </mask>
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M63 37C49.1929 37 38 48.1929 38 62V723C38 736.807 49.1929 748 63 748H962C975.807 748 987 736.807 987 723V62C987 48.1929 975.807 37 962 37H63ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                     fill="#313131"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M63 37C49.1929 37 38 48.1929 38 62V723C38 736.807 49.1929 748 63 748H962C975.807 748 987 736.807 987 723V62C987 48.1929 975.807 37 962 37H63ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                     stroke="black"
-                    stroke-width="24"
+                    strokeWidth="24"
                     mask="url(#path-11-inside-5_0_1)"
                   />
                 </g>
@@ -186,12 +186,12 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   <path
                     d="M168.832 107.337C179.933 96.2362 194.989 89.9999 210.688 89.9999L830.207 89.9996C874.389 89.9996 910.207 125.817 910.207 170L910.207 625.931C910.207 645.716 902.347 664.69 888.357 678.68C872.638 694.4 850.859 702.313 828.843 699.233C739.902 686.789 503.047 643.866 393.001 529C288.383 419.8 195.719 248.595 157.759 173.762C146.494 151.554 151.224 124.945 168.832 107.337Z"
                     fill="#D9D9D9"
-                    fill-opacity="0.05"
+                    fillOpacity="0.05"
                   />
                   <path
                     d="M762.823 125.053C767.419 120.458 773.651 117.876 780.15 117.876L808.68 117.876C849.148 117.876 881.954 150.682 881.954 191.149L881.954 210.887C881.954 217.682 879.254 224.2 874.449 229.005C863.15 240.304 844.377 238.617 835.274 225.484L816.697 198.686C812.499 192.629 807.08 187.517 800.789 183.679L767.387 163.298C753.843 155.034 751.604 136.273 762.823 125.053Z"
                     fill="#D9D9D9"
-                    fill-opacity="0.15"
+                    fillOpacity="0.15"
                   />
                 </g>
               </>
@@ -199,23 +199,23 @@ const TVFrame: React.FC<TVFrameProps> = ({
             <g id="Screen" filter="url(#filter0_d_0_1)">
               <mask id="path-11-inside-5_0_1" fill="white">
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M63 37C49.1929 37 38 48.1929 38 62V723C38 736.807 49.1929 748 63 748H962C975.807 748 987 736.807 987 723V62C987 48.1929 975.807 37 962 37H63ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                 />
               </mask>
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M63 37C49.1929 37 38 48.1929 38 62V723C38 736.807 49.1929 748 63 748H962C975.807 748 987 736.807 987 723V62C987 48.1929 975.807 37 962 37H63ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                 fill="#313131"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M63 37C49.1929 37 38 48.1929 38 62V723C38 736.807 49.1929 748 63 748H962C975.807 748 987 736.807 987 723V62C987 48.1929 975.807 37 962 37H63ZM163 68C117.16 68 80 105.16 80 151V633C80 678.84 117.16 716 163 716H862C907.84 716 945 678.84 945 633V151C945 105.16 907.84 68 862 68H163Z"
                 stroke="black"
-                stroke-width="24"
+                strokeWidth="24"
                 mask="url(#path-11-inside-5_0_1)"
               />
             </g>
@@ -240,7 +240,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="Baseball"
@@ -298,7 +298,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="Home"
@@ -354,7 +354,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="Weather"
@@ -412,7 +412,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="UHub"
@@ -470,7 +470,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="Golf"
@@ -528,7 +528,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="Messenger"
@@ -586,7 +586,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <path
                 id="Camera"
@@ -633,7 +633,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
               />
               <g id="ClockText">
                 {tvOn && (
@@ -672,14 +672,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                   cy="1002"
                   r="93"
                   stroke="black"
-                  stroke-width="10"
+                  strokeWidth="10"
                 />
               </g>
               {tvOn ? (
                 <g id="Vector" filter="url(#filter11_d_0_1)">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M864.915 961.019C864.915 959.715 864.397 958.464 863.474 957.542C862.552 956.619 861.301 956.101 859.997 956.101C858.693 956.101 857.442 956.619 856.52 957.542C855.597 958.464 855.079 959.715 855.079 961.019V997.085C855.079 998.389 855.597 999.64 856.52 1000.56C857.442 1001.48 858.693 1002 859.997 1002C861.301 1002 862.552 1001.48 863.474 1000.56C864.397 999.64 864.915 998.389 864.915 997.085V961.019ZM839.802 972.114C840.357 971.762 840.835 971.301 841.209 970.76C841.583 970.219 841.845 969.609 841.979 968.965C842.113 968.321 842.116 967.657 841.989 967.011C841.861 966.366 841.606 965.753 841.238 965.208C840.869 964.664 840.395 964.198 839.844 963.84C839.292 963.481 838.675 963.237 838.027 963.122C837.38 963.006 836.716 963.022 836.075 963.168C835.433 963.313 834.828 963.586 834.294 963.97C826.154 969.474 819.995 977.444 816.722 986.709C813.45 995.974 813.237 1006.05 816.114 1015.44C818.992 1024.84 824.809 1033.06 832.708 1038.9C840.608 1044.75 850.175 1047.9 860 1047.9C869.826 1047.9 879.392 1044.75 887.292 1038.9C895.192 1033.06 901.009 1024.84 903.886 1015.44C906.764 1006.05 906.551 995.974 903.279 986.709C900.006 977.444 893.847 969.474 885.707 963.97C885.172 963.602 884.57 963.343 883.935 963.208C883.3 963.074 882.644 963.066 882.006 963.186C881.368 963.306 880.76 963.552 880.218 963.908C879.675 964.264 879.208 964.724 878.844 965.262C878.48 965.8 878.226 966.404 878.097 967.04C877.967 967.676 877.965 968.332 878.091 968.969C878.216 969.606 878.466 970.212 878.827 970.752C879.188 971.292 879.652 971.755 880.192 972.114C886.59 976.438 891.43 982.7 894.003 989.98C896.575 997.26 896.744 1005.17 894.483 1012.56C892.223 1019.94 887.653 1026.4 881.445 1030.99C875.238 1035.58 867.721 1038.06 860 1038.06C852.28 1038.06 844.763 1035.58 838.555 1030.99C832.348 1026.4 827.778 1019.94 825.517 1012.56C823.257 1005.17 823.425 997.26 825.998 989.98C828.57 982.7 833.405 976.438 839.802 972.114Z"
                     fill="#FF7E78"
                   />
@@ -687,8 +687,8 @@ const TVFrame: React.FC<TVFrameProps> = ({
               ) : (
                 <g id="Vector">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M864.915 961.019C864.915 959.715 864.397 958.464 863.474 957.542C862.552 956.619 861.301 956.101 859.997 956.101C858.693 956.101 857.442 956.619 856.52 957.542C855.597 958.464 855.079 959.715 855.079 961.019V997.085C855.079 998.389 855.597 999.64 856.52 1000.56C857.442 1001.48 858.693 1002 859.997 1002C861.301 1002 862.552 1001.48 863.474 1000.56C864.397 999.64 864.915 998.389 864.915 997.085V961.019ZM839.802 972.114C840.357 971.762 840.835 971.301 841.209 970.76C841.583 970.219 841.845 969.609 841.979 968.965C842.113 968.321 842.116 967.657 841.989 967.011C841.861 966.366 841.606 965.753 841.238 965.208C840.869 964.664 840.395 964.198 839.844 963.84C839.292 963.481 838.675 963.237 838.027 963.122C837.38 963.006 836.716 963.022 836.075 963.168C835.433 963.313 834.828 963.586 834.294 963.97C826.154 969.474 819.995 977.444 816.722 986.709C813.45 995.974 813.237 1006.05 816.114 1015.44C818.992 1024.84 824.809 1033.06 832.708 1038.9C840.608 1044.75 850.175 1047.9 860 1047.9C869.826 1047.9 879.392 1044.75 887.292 1038.9C895.192 1033.06 901.009 1024.84 903.886 1015.44C906.764 1006.05 906.551 995.974 903.279 986.709C900.006 977.444 893.847 969.474 885.707 963.97C885.172 963.602 884.57 963.343 883.935 963.208C883.3 963.074 882.644 963.066 882.006 963.186C881.368 963.306 880.76 963.552 880.218 963.908C879.675 964.264 879.208 964.724 878.844 965.262C878.48 965.8 878.226 966.404 878.097 967.04C877.967 967.676 877.965 968.332 878.091 968.969C878.216 969.606 878.466 970.212 878.827 970.752C879.188 971.292 879.652 971.755 880.192 972.114C886.59 976.438 891.43 982.7 894.003 989.98C896.575 997.26 896.744 1005.17 894.483 1012.56C892.223 1019.94 887.653 1026.4 881.445 1030.99C875.238 1035.58 867.721 1038.06 860 1038.06C852.28 1038.06 844.763 1035.58 838.555 1030.99C832.348 1026.4 827.778 1019.94 825.517 1012.56C823.257 1005.17 823.425 997.26 825.998 989.98C828.57 982.7 833.405 976.438 839.802 972.114Z"
                     fill="#959595"
                   />
@@ -712,7 +712,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
                 className="drop-shadow-medium"
               />
               <path
@@ -738,7 +738,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 rx="16"
                 fill="#313131"
                 stroke="black"
-                stroke-width="10"
+                strokeWidth="10"
                 className="drop-shadow-medium"
               />
               <path
@@ -758,9 +758,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="973"
           height="736"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -793,9 +793,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -828,9 +828,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -863,9 +863,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -898,9 +898,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -933,9 +933,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -968,9 +968,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1003,9 +1003,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="123"
           height="140"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1038,9 +1038,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="258.745"
           height="52.64"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1073,9 +1073,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="205"
           height="204"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1108,9 +1108,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="204"
           height="204"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1143,9 +1143,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="115.798"
           height="115.797"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1178,9 +1178,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="113"
           height="112"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1213,9 +1213,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
           width="113"
           height="112"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
