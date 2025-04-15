@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { isTablet } from "react-device-detect";
 
 interface TVFrameProps {
   currentProject: number;
@@ -77,7 +78,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
       viewBox="0 0 1262 1119"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute w-auto h-full object-cover z-40 pointer-events-none"
+      className={`absolute w-auto ${
+        isTablet ? "h-full" : "h-full"
+      } object-cover z-40 pointer-events-none`}
     >
       <g id="TV">
         <rect x="-209" y="-28" width="1689" height="1350" rx="20" />
@@ -207,8 +210,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                     fill="#787878"
                   />
                 ) : currentProject === 1 ? (
-                  <g id="Light_2" filter="url(#filter0_d_0_2)">
-                    <circle cx="216.5" cy="949.5" r="6.5" fill="#84FF7E" />
+                  <g id="Light_2">
+                    <circle
+                      cx="216.5"
+                      cy="949.5"
+                      r="6.5"
+                      fill="#84FF7E"
+                      className="led-glow-green"
+                    />
                   </g>
                 ) : (
                   <circle
@@ -258,8 +267,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                     fill="#787878"
                   />
                 ) : currentProject === 2 ? (
-                  <g id="Light_2" filter="url(#filter0_d_0_3)">
-                    <circle cx="347.5" cy="949.5" r="6.5" fill="#84FF7E" />
+                  <g id="Light_2">
+                    <circle
+                      cx="347.5"
+                      cy="949.5"
+                      r="6.5"
+                      fill="#84FF7E"
+                      className="led-glow-green"
+                    />
                   </g>
                 ) : (
                   <circle
@@ -309,8 +324,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                     fill="#787878"
                   />
                 ) : currentProject === 3 ? (
-                  <g id="Light_4" filter="url(#filter0_d_0_4)">
-                    <circle cx="478.5" cy="949.5" r="6.5" fill="#84FF7E" />
+                  <g id="Light_4">
+                    <circle
+                      cx="478.5"
+                      cy="949.5"
+                      r="6.5"
+                      fill="#84FF7E"
+                      className="led-glow-green"
+                    />
                   </g>
                 ) : (
                   <circle
@@ -360,8 +381,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                     fill="#787878"
                   />
                 ) : currentProject === 4 ? (
-                  <g id="Light_5" filter="url(#filter0_d_0_5)">
-                    <circle cx="608.5" cy="949.5" r="6.5" fill="#84FF7E" />
+                  <g id="Light_5">
+                    <circle
+                      cx="608.5"
+                      cy="949.5"
+                      r="6.5"
+                      fill="#84FF7E"
+                      className="led-glow-green"
+                    />
                   </g>
                 ) : (
                   <circle
@@ -411,8 +438,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                     fill="#787878"
                   />
                 ) : currentProject === 5 ? (
-                  <g id="Light_6" filter="url(#filter0_d_0_6)">
-                    <circle cx="740.5" cy="949.5" r="6.5" fill="#84FF7E" />
+                  <g id="Light_6">
+                    <circle
+                      cx="740.5"
+                      cy="949.5"
+                      r="6.5"
+                      fill="#84FF7E"
+                      className="led-glow-green"
+                    />
                   </g>
                 ) : (
                   <circle
@@ -457,8 +490,14 @@ const TVFrame: React.FC<TVFrameProps> = ({
                     fill="#787878"
                   />
                 ) : currentProject === 6 ? (
-                  <g id="Light_7" filter="url(#filter0_d_0_7)">
-                    <circle cx="871.5" cy="949.5" r="6.5" fill="#84FF7E" />
+                  <g id="Light_7">
+                    <circle
+                      cx="871.5"
+                      cy="949.5"
+                      r="6.5"
+                      fill="#84FF7E"
+                      className="led-glow-green"
+                    />
                   </g>
                 ) : (
                   <circle
@@ -609,7 +648,7 @@ const TVFrame: React.FC<TVFrameProps> = ({
                 mask="url(#path-33-inside-5_0_1)"
               />
             </g>
-            <g id="Right Panel" filter="url(#filter16_d_01)">
+            <g id="Right Panel">
               <rect
                 id="Control Panel Main"
                 x="1009"
@@ -1004,7 +1043,9 @@ const TVFrame: React.FC<TVFrameProps> = ({
               </g>
               <g
                 id="Left Toggle"
-                onClick={() => handleOpenLink("demo")}
+                onClick={() => {
+                  handleOpenLink("demo");
+                }}
                 style={{
                   cursor: tvOn ? "pointer" : "default",
                   pointerEvents: "auto",

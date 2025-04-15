@@ -55,7 +55,7 @@ const TVContent: React.FC<TVContentProps> = ({
 
   if (isTablet) {
     return (
-      <div className="absolute overflow-hidden z-0 top-[10%] left-[19%] w-[49%] h-[50%]">
+      <div className="absolute overflow-hidden z-0 top-[6%] left-[13%] w-[58%] h-[58%]">
         <SelectedProject fullScreen={fullScreen} />
         {flickerOverlay}
       </div>
