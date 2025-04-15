@@ -82,11 +82,11 @@ const About: React.FC<AboutProps> = ({ fullScreen }) => {
       <div className="absolute inset-0 pointer-events-none grain-overlay z-30" />
       <div className="relative flex flex-col items-center justify-center h-full w-full z-0 p-4">
         <div className="flex flex-row items-center justify-center h-full w-full">
-          <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+          <div className="flex flex-col items-center justify-evenly h-11/12 w-full">
             <h1 className="text-center text-3xl font-calistoga text-white">
               Home
             </h1>
-            <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
+            <div className="flex flex-col items-center justify-evenly h-full w-full">
               <h1 className="font-albert text-lg text-white text-left">
                 Hi! I'm Levi, a recent software engineer graduate living in
                 Victoria, BC looking for work. Feel free to check out some of my
@@ -94,32 +94,47 @@ const About: React.FC<AboutProps> = ({ fullScreen }) => {
                 resume or LinkedIn using the buttons on this screen.
               </h1>
             </div>
-            <div className="flex items-start flex-row justify-center h-1/6 space-x-6 w-full">
+            <div className="flex items-start flex-row justify-center h-2/6 space-x-6 w-full">
               <div className="flex items-center justify-center flex-col group">
-                <button
-                  className="w-18 h-18 flex justify-center items-center border-4 bg-neutral-800 border-white rounded-full transition duration-200 group-hover:bg-white/30 group-hover:translate-y-0 translate-y-2"
-                  style={{ pointerEvents: "auto" }}
-                  onClick={() => console.log("Resume button clicked")}
-                >
-                  <FileText size={36} color="#fff" weight="bold" />
-                </button>
-                <h1 className="text-md font-albert opacity-0 text-white text-left text-nowrap group-hover:opacity-100 delay-100 transition duration-200 group-hover:translate-y-0 translate-y-2">
-                  Resume
-                </h1>
+                <a href={Resume} target="_blank" rel="noopener noreferrer">
+                  <button
+                    className="w-18 h-18 flex justify-center items-center border-4 bg-neutral-800 border-white rounded-full transition duration-200 group-hover:bg-white/30 group-hover:translate-y-0 translate-y-2"
+                    style={{ pointerEvents: "auto" }}
+                  >
+                    <FileText size={36} color="#fff" weight="bold" />
+                  </button>
+                  <h1 className="text-md font-albert opacity-0 text-white text-center text-nowrap group-hover:opacity-100 delay-100 transition duration-200 group-hover:translate-y-0 translate-y-2">
+                    Resume
+                  </h1>
+                </a>
               </div>
               <div className="flex items-center justify-center flex-col group">
-                <button className="w-18 h-18 flex justify-center items-center border-4 bg-neutral-800 border-white rounded-full transition duration-200 hover:bg-white/30 group-hover:translate-y-0 translate-y-2">
-                  <At size={36} color="#fff" weight="bold" />
-                </button>
-                <h1 className="text-md font-albert opacity-0 text-white text-left text-nowrap group-hover:opacity-100 delay-100 transition duration-200 group-hover:translate-y-0 translate-y-2">
+                <a
+                  href="https://www.linkedin.com/in/levibare"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="w-18 h-18 flex justify-center items-center border-4 bg-neutral-800 border-white rounded-full transition duration-200 hover:bg-white/30 group-hover:translate-y-0 translate-y-2">
+                    <At size={36} color="#fff" weight="bold" />
+                  </button>
+                </a>
+                <h1 className="text-md font-albert opacity-0 text-white text-center text-nowrap group-hover:opacity-100 delay-100 transition duration-200 group-hover:translate-y-0 translate-y-2">
                   LinkedIn
                 </h1>
               </div>
               <div className="flex items-center justify-center flex-col group">
-                <button className="w-18 h-18 flex justify-center items-center border-4 bg-neutral-800 border-white rounded-full transition duration-200 hover:bg-white/30 group-hover:translate-y-0 translate-y-2">
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.flickr.com/photos/133845330@N05/",
+                      "_blank"
+                    )
+                  }
+                  className="w-18 h-18 flex justify-center items-center border-4 bg-neutral-800 border-white rounded-full transition duration-200 hover:bg-white/30 group-hover:translate-y-0 translate-y-2"
+                >
                   <DotsThree size={36} color="#fff" weight="bold" />
                 </button>
-                <h1 className="text-md font-albert opacity-0 text-white text-left text-nowrap group-hover:opacity-100 delay-100 transition duration-200 group-hover:translate-y-0 translate-y-2">
+                <h1 className="text-md font-albert opacity-0 text-white text-center text-nowrap group-hover:opacity-100 delay-100 transition duration-200 group-hover:translate-y-0 translate-y-2">
                   Photos
                 </h1>
               </div>
