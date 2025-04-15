@@ -36,7 +36,7 @@ const BaseballStats: React.FC<BaseballStatsProps> = ({ fullScreen }) => {
         <div className="relative flex flex-col items-center justify-center h-full w-full z-0 p-4">
           <div className="flex flex-row items-center justify-center h-full w-full">
             <div className="flex flex-col items-center justify-evenly h-full w-4/6">
-              <h1 className="text-center text-sm font-calistoga text-white">
+              <h1 className="text-center text-lg font-calistoga text-white">
                 Baseball Stats
               </h1>
               <div className="flex flex-col items-center justify-evenly h-5/6 w-full">

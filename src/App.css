@@ -49,6 +49,82 @@
   filter: drop-shadow(10px 10px 0px rgba(0, 0, 0, 0.5));
 }
 
+.power-off-glow-mobile {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  animation: powerOffGlowFadeMobile 0.5s forwards;
+}
+
+@keyframes powerOffGlowFadeMobile {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(5);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+}
+
+.power-off-glow {
+  position: absolute;
+  top: 35%;
+  left: 43%;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  animation: powerOffGlowFade 0.5s forwards;
+}
+
+@keyframes powerOffGlowFade {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(10);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+}
+
+.flicker-overlay {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  animation: flickerAnimation 350ms linear;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes animateGrain {
   0%,
   100% {
