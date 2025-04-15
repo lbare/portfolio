@@ -46,7 +46,7 @@ const TVContent: React.FC<TVContentProps> = ({
 
   if (isMobile) {
     return (
-      <div className="absolute overflow-hidden z-0 top-[21%] left-[33.5%] w-[33%] h-[33%]">
+      <div className="absolute overflow-hidden z-0 top-[20%] left-[33%] w-[34%] h-[34%]">
         <SelectedProject fullScreen={fullScreen} />
         {flickerOverlay}
       </div>
