@@ -15,7 +15,6 @@ function App() {
   const [powerOffAnimating, setPowerOffAnimating] = useState<boolean>(false);
   const firstRender = useRef(true);
   const images = usePreloadImages();
-  const [isReady, setIsReady] = useState<boolean>(false);
 
   useEffect(() => {
     if (firstRender.current) {
@@ -38,13 +37,7 @@ function App() {
     }
   }, [tvOn]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsReady(true);
-    }, 1500);
-  }, []);
-
-  if (!isReady || !images) {
+  if (!images) {
     return (
       <div className="flex items-center justify-center h-dvh w-screen bg-black overflow-hidden">
         <ColorRing
@@ -68,7 +61,7 @@ function App() {
           bg-auto bg-no-repeat bg-center`}
       >
         <div
-          className={`relative h-full aspect-[4/3] flex items-center justify-center mb-20
+          className={`relative h-full aspect-[4/3] flex items-center justify-center
               ${shouldShake ? "tv-shake" : ""}
               `}
         >
