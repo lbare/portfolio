@@ -33,9 +33,9 @@ const WeatherApp: React.FC<WeatherAppProps> = ({ fullScreen }) => {
               <div className="flex flex-col items-center justify-evenly h-5/6 w-full">
                 <h1 className="font-albert text-xs text-white text-left">
                   Java application to display live weather data using the
-                  OpenWeather API. This was my very coding first project, ever.
+                  OpenWeather API. This was my very first coding project, ever.
                   I like to keep it around to remember what got me into
-                  programming and how far I (hopefully) have come since.
+                  programming and how far I have come since.
                 </h1>
               </div>
               <div className="flex items-center justify-start h-1/6 space-x-2 w-full">
