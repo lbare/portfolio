@@ -6,6 +6,7 @@ import TVFrameMobile from "./components/TVFrameMobile";
 import { isMobileOnly, isTablet } from "react-device-detect";
 import usePreloadImages from "./hooks/usePreloadImages";
 import { ColorRing } from "react-loader-spinner";
+import lines from "./assets/svg/lines.svg";
 
 function App() {
   const [currentProject, setCurrentProject] = useState<number>(0);
@@ -55,10 +56,11 @@ function App() {
   if (isMobileOnly) {
     return (
       <div
-        className={`flex items-center justify-center h-dvh w-screen bg-[url('/src/assets/svg/lines.svg')] grayscale-100 brightness-50 transition-all duration-1000 ease-out overflow-hidden ${
+        className={`flex items-center justify-center h-dvh w-screen grayscale-100 brightness-50 transition-all duration-1000 ease-out overflow-hidden ${
           tvOn && "filter-none"
         }
           bg-auto bg-no-repeat bg-center`}
+        style={{ backgroundImage: `url(${lines})` }}
       >
         <div
           className={`relative h-full aspect-[4/3] flex items-center justify-center
@@ -89,9 +91,10 @@ function App() {
   if (isTablet) {
     return (
       <div
-        className={`flex items-center justify-center h-dvh w-screen bg-[url('/src/assets/svg/lines.svg')] grayscale-100 brightness-50 transition-all duration-500 ease-out ${
+        className={`flex items-center justify-center h-dvh w-screen grayscale-100 brightness-50 transition-all duration-500 ease-out ${
           tvOn && "filter-none"
-        } "bg-auto bg-no-repeat bg-center pt-6`}
+        } bg-auto bg-no-repeat bg-center pt-6`}
+        style={{ backgroundImage: `url(${lines})` }}
       >
         <div
           className={`relative h-full aspect-[4/3] flex items-center justify-center ${
@@ -119,9 +122,10 @@ function App() {
 
   return (
     <div
-      className={`flex items-center justify-center h-dvh w-screen bg-[url('/src/assets/svg/lines.svg')] grayscale-100 brightness-50 transition-all duration-500 ease-out ${
+      className={`flex items-center justify-center h-dvh w-screen grayscale-100 brightness-50 transition-all duration-500 ease-out ${
         tvOn && "filter-none"
-      } "bg-auto bg-no-repeat bg-center pt-6`}
+      } bg-auto bg-no-repeat bg-center pt-6`}
+      style={{ backgroundImage: `url(${lines})` }}
     >
       <div
         className={`relative h-full aspect-[4/3] flex items-center justify-center ${

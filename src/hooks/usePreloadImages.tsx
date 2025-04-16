@@ -23,6 +23,7 @@ import weather_1 from "../assets/images/weather-1.webp";
 import weather_2 from "../assets/images/weather-2.webp";
 import about from "../assets/images/about.webp";
 import noise_texture from "../assets/images/noise-texture.webp";
+import lines from "../assets/svg/lines.svg";
 
 export const projectImages = [
   aldergreens_1,
@@ -49,6 +50,7 @@ export const projectImages = [
   weather_2,
   about,
   noise_texture,
+  lines,
 ];
 
 const usePreloadImages = () => {
