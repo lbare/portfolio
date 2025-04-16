@@ -21,7 +21,7 @@
   background-size: cover;
   width: 200%;
   height: 200%;
-  opacity: 0.05;
+  opacity: 0.1;
   animation: animateGrain 20s steps(10) infinite;
 }
 
