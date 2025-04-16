@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../assets/images/about.png";
+import about from "../assets/images/about.webp";
 import { isMobileOnly } from "react-device-detect";
 import { FileText, At, DotsThree } from "@phosphor-icons/react";
 import Resume from "../assets/pdf/Levi_Bare_Resume.pdf";

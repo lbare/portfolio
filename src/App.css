@@ -17,7 +17,7 @@
 }
 
 .grain-overlay {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  background-image: url("./assets/images/noise-texture.webp");
   background-size: cover;
   width: 200%;
   height: 200%;

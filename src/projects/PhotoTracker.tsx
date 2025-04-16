@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobileOnly } from "react-device-detect";
-import photoTracker_1 from "../assets/images/photoTracker-1.jpeg";
-import photoTracker_2 from "../assets/images/photoTracker-2.jpeg";
+import photoTracker_1 from "../assets/images/photoTracker-1.webp";
+import photoTracker_2 from "../assets/images/photoTracker-2.webp";
 
 interface PhotoTrackerProps {
   fullScreen: boolean;

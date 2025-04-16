@@ -1,27 +1,28 @@
 import { useEffect, useState } from "react";
-import aldergreens_1 from "../assets/images/alderGreens-1.png";
-import aldergreens_2 from "../assets/images/alderGreens-2.png";
-import aldergreens_3 from "../assets/images/alderGreens-3.png";
-import aldergreens_4 from "../assets/images/alderGreens-4.png";
-import aldergreens_5 from "../assets/images/alderGreens-5.png";
-import aldergreens_6 from "../assets/images/alderGreens-6.png";
-import aldergreens_7 from "../assets/images/alderGreens-7.png";
-import baseballStats_1 from "../assets/images/baseballStats-1.png";
-import baseballStats_2 from "../assets/images/baseballStats-2.png";
-import baseballStats_3 from "../assets/images/baseballStats-3.png";
-import baseballStats_4 from "../assets/images/baseballStats-4.png";
-import baseballStats_5 from "../assets/images/baseballStats-5.png";
-import messenger_1 from "../assets/images/messenger-1.png";
-import photoTracker_1 from "../assets/images/photoTracker-1.jpeg";
-import photoTracker_2 from "../assets/images/photoTracker-2.jpeg";
-import uhub_1 from "../assets/images/uhub-1.png";
-import uhub_2 from "../assets/images/uhub-2.png";
-import uhub_3 from "../assets/images/uhub-3.png";
-import uhub_4 from "../assets/images/uhub-4.png";
-import uhub_5 from "../assets/images/uhub-5.png";
-import weather_1 from "../assets/images/weather-1.png";
-import weather_2 from "../assets/images/weather-2.png";
-import about from "../assets/images/about.png";
+import aldergreens_1 from "../assets/images/alderGreens-1.webp";
+import aldergreens_2 from "../assets/images/alderGreens-2.webp";
+import aldergreens_3 from "../assets/images/alderGreens-3.webp";
+import aldergreens_4 from "../assets/images/alderGreens-4.webp";
+import aldergreens_5 from "../assets/images/alderGreens-5.webp";
+import aldergreens_6 from "../assets/images/alderGreens-6.webp";
+import aldergreens_7 from "../assets/images/alderGreens-7.webp";
+import baseballStats_1 from "../assets/images/baseballStats-1.webp";
+import baseballStats_2 from "../assets/images/baseballStats-2.webp";
+import baseballStats_3 from "../assets/images/baseballStats-3.webp";
+import baseballStats_4 from "../assets/images/baseballStats-4.webp";
+import baseballStats_5 from "../assets/images/baseballStats-5.webp";
+import messenger_1 from "../assets/images/messenger-1.webp";
+import photoTracker_1 from "../assets/images/photoTracker-1.webp";
+import photoTracker_2 from "../assets/images/photoTracker-2.webp";
+import uhub_1 from "../assets/images/uhub-1.webp";
+import uhub_2 from "../assets/images/uhub-2.webp";
+import uhub_3 from "../assets/images/uhub-3.webp";
+import uhub_4 from "../assets/images/uhub-4.webp";
+import uhub_5 from "../assets/images/uhub-5.webp";
+import weather_1 from "../assets/images/weather-1.webp";
+import weather_2 from "../assets/images/weather-2.webp";
+import about from "../assets/images/about.webp";
+import noise_texture from "../assets/images/noise-texture.webp";
 
 export const projectImages = [
   aldergreens_1,
@@ -47,6 +48,7 @@ export const projectImages = [
   weather_1,
   weather_2,
   about,
+  noise_texture,
 ];
 
 const usePreloadImages = () => {

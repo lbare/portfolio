@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobileOnly } from "react-device-detect";
-import weather_1 from "../assets/images/weather-1.png";
-import weather_2 from "../assets/images/weather-2.png";
+import weather_1 from "../assets/images/weather-1.webp";
+import weather_2 from "../assets/images/weather-2.webp";
 
 interface WeatherAppProps {
   fullScreen: boolean;

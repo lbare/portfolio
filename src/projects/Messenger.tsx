@@ -1,6 +1,6 @@
 import React from "react";
 import { Code } from "@phosphor-icons/react";
-import messenger_1 from "../assets/images/messenger-1.png";
+import messenger_1 from "../assets/images/messenger-1.webp";
 import { isMobileOnly, isTablet } from "react-device-detect";
 
 const Messenger: React.FC = () => {

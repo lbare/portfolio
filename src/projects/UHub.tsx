@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobileOnly } from "react-device-detect";
-import uhub_1 from "../assets/images/uhub-1.png";
-import uhub_2 from "../assets/images/uhub-2.png";
-import uhub_3 from "../assets/images/uhub-3.png";
-import uhub_4 from "../assets/images/uhub-4.png";
-import uhub_5 from "../assets/images/uhub-5.png";
+import uhub_1 from "../assets/images/uhub-1.webp";
+import uhub_2 from "../assets/images/uhub-2.webp";
+import uhub_3 from "../assets/images/uhub-3.webp";
+import uhub_4 from "../assets/images/uhub-4.webp";
+import uhub_5 from "../assets/images/uhub-5.webp";
 
 interface UHubProps {
   fullScreen: boolean;

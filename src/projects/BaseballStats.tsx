@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Code } from "@phosphor-icons/react";
 import { isMobileOnly } from "react-device-detect";
-import baseballStats_1 from "../assets/images/baseballStats-1.png";
-import baseballStats_2 from "../assets/images/baseballStats-2.png";
-import baseballStats_3 from "../assets/images/baseballStats-3.png";
-import baseballStats_4 from "../assets/images/baseballStats-4.png";
-import baseballStats_5 from "../assets/images/baseballStats-5.png";
+import baseballStats_1 from "../assets/images/baseballStats-1.webp";
+import baseballStats_2 from "../assets/images/baseballStats-2.webp";
+import baseballStats_3 from "../assets/images/baseballStats-3.webp";
+import baseballStats_4 from "../assets/images/baseballStats-4.webp";
+import baseballStats_5 from "../assets/images/baseballStats-5.webp";
 
 interface BaseballStatsProps {
   fullScreen: boolean;
