@@ -1,6 +1,6 @@
 import React from "react";
 import about from "../assets/images/about.png";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import { FileText, At, DotsThree } from "@phosphor-icons/react";
 import Resume from "../assets/pdf/Levi_Bare_Resume.pdf";
 
@@ -9,7 +9,7 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({ fullScreen }) => {
-  if (isMobile && !fullScreen) {
+  if (isMobileOnly && !fullScreen) {
     return (
       <div className="w-full h-full bg-gradient-to-tr from-[#313131] from-20% to-[#515151] to-100% bg-cover flex flex-col items-center justify-center outline-none">
         <div className="absolute inset-0 pointer-events-none grain-overlay z-10" />
